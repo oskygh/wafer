@@ -1,0 +1,7 @@
+required: sudo
+services:
+  - docker
+before_install:
+  - docker build -t nikao/react-test -f ./client/Dockerfile.dev ./client
+script:
+  - docker run oskygh/react-test npm test -- --coverage
