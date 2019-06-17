@@ -4,6 +4,8 @@ services:
 before_install:
   - docker build -t nikao/react-test -f ./client/Dockerfile.dev ./client
   - docker build -t nikao/server-test -f ./server/Dockerfile.dev ./server
+  - docker build -t nikao/worker-test -f ./worker/Dockerfile.dev ./worker
 script:
   - docker run nikao/react-test npm test -- --coverage
-  - docker run nikao/server-test
+  - docker run nikao/server-test npm test -- --coverage
+  - docker run nikao/worker-test npm test -- --coverage
