@@ -7,9 +7,9 @@ import partner5 from "./images/partner5.png"
 import partner6 from "./images/partner6.png"
 
 export default () => (
-  <React.Fragment>
+  <section className="container-fluid bg-light">
     <p>Trusted Partners &amp; Inverstors</p>
-    <div className="row">
+    <div className="row justify-content-around">
         <img src={partner1} alt=""/>
         <img src={partner2} alt=""/>
         <img src={partner3} alt=""/>
@@ -17,5 +17,5 @@ export default () => (
         <img src={partner5} alt=""/>
         <img src={partner6} alt=""/>
     </div>
-  </React.Fragment>
+  </section>
 );
