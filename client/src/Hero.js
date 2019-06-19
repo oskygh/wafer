@@ -7,8 +7,8 @@ import partner5 from "./images/partner5.png"
 import partner6 from "./images/partner6.png"
 
 export default () => (
-  <section className="container-fluid bg-light">
-    <p>Trusted Partners &amp; Inverstors</p>
+  <section className="container-fluid bg-light p-3">
+    <p>Trusted Partners &amp; Investors</p>
     <div className="row justify-content-around">
         <img src={partner1} alt=""/>
         <img src={partner2} alt=""/>
