@@ -7,7 +7,7 @@ export default () => (
     <Router>
         <Switch>
             <Route path="/" component={LandingPage} exact />
-            <Route path="/form" component={Form} />
+            <Route path="/form/personal" component={Form} />
         </Switch>
     </Router>
 )
