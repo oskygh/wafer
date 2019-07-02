@@ -27,6 +27,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'core',
+    'rest_framework',
+    'cors'
 ]
 
 MIDDLEWARE = [
@@ -39,6 +42,13 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+CORS_ORIGIN_WHITELIST = (
+    'localhost : 3000',
+)
+ 
+ MEDIA_URL = '/media'
+ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+ 
 ROOT_URLCONF = 'api.urls'
 
 TEMPLATES = [
