@@ -29,7 +29,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'core',
     'rest_framework',
-    'cors'
+    
 ]
 
 MIDDLEWARE = [
@@ -47,8 +47,8 @@ CORS_ORIGIN_WHITELIST = (
     'localhost : 3000',
 )
  
- MEDIA_URL = '/media'
- MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+#  MEDIA_URL = '/media'
+#  MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 ROOT_URLCONF = 'api.urls'
 
