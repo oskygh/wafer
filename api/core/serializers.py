@@ -1,27 +1,27 @@
-from rest_framework import serializer
+from rest_framework import serializers
 from .models import * 
 
-class LenderSerializer(serializer.ModelSerializer):
+class LenderSerializer(serializers.ModelSerializer):
     class Meta:
         model = Lender
         fields = "__all__"
 
-class RetailerSerializer(serializer.ModelSerializer):
+class RetailerSerializer(serializers.ModelSerializer):
     class Meta:
         model = Retailer
         fields = "__all__"
 
-class ProductSerializer(serializer.ModelSerializer):
+class ProductSerializer(serializers.ModelSerializer):
     class Meta:
         model = Product
         fields = "__all__"
 
-class BuyerSerializer(serializer.ModelSerializer):
+class BuyerSerializer(serializers.ModelSerializer):
     class Meta:
         model = Buyer
         fields = "__all__"
 
-class InvoiceSerializer(serializer.ModelSerializer):
+class InvoiceSerializer(serializers.ModelSerializer):
     class Meta:
         model = Invoice
         fields = "__all__"
